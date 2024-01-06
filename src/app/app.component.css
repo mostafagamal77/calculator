@@ -1,0 +1,43 @@
+.content {
+  background-color: #eadbc8;
+  width: 246px;
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  .result {
+    height: 50px;
+    padding: 10px;
+    background-color: #884a39;
+    color: #f6f5f5;
+    overflow-x: auto;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+  }
+  .result::-webkit-scrollbar {
+    width: 2px;
+    height: 4px;
+  }
+  .result::-webkit-scrollbar-track {
+    background-color: #884a39;
+  }
+  .result::-webkit-scrollbar-thumb {
+    background-color: #c9b2b2;
+  }
+  & button {
+    border: none !important;
+    width: 50px;
+    height: 50px;
+    background-color: #dac0a3;
+    color: #102c57;
+    box-shadow: inset -2px -2px 2px rgba(115, 43, 43, 0.2);
+  }
+  & .equal {
+    width: 110px;
+  }
+}

@@ -1,0 +1,62 @@
+<div class="container">
+  <div
+    class="calculator w-100 min-vh-100 d-flex flex-column justify-content-center align-items-center"
+  >
+    <h1 class="text-center mb-5">Simple Calculator</h1>
+    <div class="content">
+      <section class="result mb-2 text-end">
+        <span>{{ result }}</span>
+      </section>
+      <div class="buttons">
+        <div class="d-flex gap-2 mb-2">
+          <button (click)="clearResults()" class="btn">AC</button>
+          <button (click)="deleteNumber()" class="btn">DE</button>
+          <button
+            (click)="getAction(item)"
+            *ngFor="let item of ['%', '/']"
+            class="btn"
+          >
+            {{ item }}
+          </button>
+        </div>
+        <div class="d-flex gap-2 mb-2">
+          <button
+            (click)="getAction(item)"
+            *ngFor="let item of [7, 8, 9, '*']"
+            class="btn"
+          >
+            {{ item }}
+          </button>
+        </div>
+        <div class="d-flex gap-2 mb-2">
+          <button
+            (click)="getAction(item)"
+            *ngFor="let item of [4, 5, 6, '-']"
+            class="btn"
+          >
+            {{ item }}
+          </button>
+        </div>
+        <div class="d-flex gap-2 mb-2">
+          <button
+            (click)="getAction(item)"
+            *ngFor="let item of [1, 2, 3, '+']"
+            class="btn"
+          >
+            {{ item }}
+          </button>
+        </div>
+        <div class="d-flex gap-2">
+          <button
+            (click)="getAction(item)"
+            *ngFor="let item of [0, '.']"
+            class="btn"
+          >
+            {{ item }}
+          </button>
+          <button (click)="getResult()" class="btn flex-grow- equal">=</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
